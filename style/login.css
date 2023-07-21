@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.subtitleSite {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  gap: 10px;
+}
+
+.subtitleSite span {
+  cursor: pointer;
+  color: #ff7929;
+}
+
+.subtitleYesKonto span {
+  cursor: pointer;
+  color: #ff7929;
+}
+
+input {
+    transition: .2s ease;
+
+}
+
+input:focus {
+    border: 1px solid #ff7929;
+}
+
+.main {
+  width: 16rem;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+}
+
+#Continue {
+  transition: all 0.3s linear;
+  margin-top: 0.5rem;
+  height: 45px;
+  background-color: /*#10a37f*/ #ff7929;
+  color: #ffffff;
+  border-radius: 3px;
+  border: none;
+}
+
+#ContinueLogIn {
+  transition: all 0.3s linear;
+  margin-top: 0.5rem;
+  height: 45px;
+  background-color: #ff7929;
+  color: #ffffff;
+  border-radius: 3px;
+  border: none;
+}
+
+#Continue:hover {
+  background-color: #e66c25;
+}
+
+#ContinueLogIn:hover {
+  background-color: #e66c25;
+}
+
+.subtitleNoKonto {
+  display: flex;
+  gap: 6px;
+  margin-top: 13px;
+  text-align: center;
+  font-size: 14px;
+  justify-content: center;
+}
+
+.subtitleYesKonto {
+  display: flex;
+  gap: 6px;
+  margin-top: 13px;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.subtitleNoKonto span {
+  cursor: pointer;
+  color: #ff7929;
+}
+
+.Username {
+  height: 45px;
+  padding-left: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.intLogin {
+  display: none;
+  height: 45px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.Login {
+  height: 45px;
+  border-radius: 6px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.intPassword {
+  outline: none;
+  display: none;
+  height: 45px;
+  padding-left: 8px;
+  border-radius: 0 0 6px 6px;
+  border: 1px solid #ccc;
+}
+
+.Password {
+  outline: none;
+  display: none;
+  height: 45px;
+  padding-left: 8px;
+  border-radius: 0 0 6px 6px;
+  border: 1px solid #ccc;
+}
+
+.or {
+  background: white;
+  margin: 0 auto;
+  padding: 7px;
+  border-radius: 100%;
+  font-size: 11px;
+  color: #6b6b6b;
+}
+
+.orWrapper {
+  background: #ccc;
+  height: 1px;
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.logINBtn {
+  border: 1px solid #ccc;
+  height: 45px;
+  border-radius: 3px;
+  background: transparent;
+  display: flex;
+  padding-left: 8%;
+  align-items: center;
+  font-size: 78%;
+  gap: 17px;
+  transition: all 0.3s linear;
+}
+
+.logINBtn:hover {
+  background: #dedede;
+}
+
+.icon-button {
+  height: 24px;
+  width: 23px;
+}
+
+.wrapperBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1.5rem;
+  width: 133%;
+  margin-left: -29px;
+}
+
+.SignUp {
+}
+
+.SignIn {
+  display: none;
+}
+
+.inputError {
+  border: 1px solid red;
+}
+
+.wrapperPassword {
+  position: relative;
+}
+
+.wrapperPassword i {
+  cursor: pointer;
+  position: absolute;
+  right: 9px;
+  margin-top: -12%;
+}
+
+.wrapperPassword input {
+  width: 100%;
+}
+
+#togglePassword {
+  display: none;
+}
+
+#togglePasswordTwo {
+  display: none;
+}

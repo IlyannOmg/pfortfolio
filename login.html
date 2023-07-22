@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+      integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="content/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style/login.css" />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <section class="SignUp">
+      <form class="main">
+        <form>
+          <h3 class="title">Create your account</h3>
+          <input
+            type="text"
+            name="input"
+            placeholder="Create username"
+            class="Username"
+            minlength="3"
+            maxlength="25"
+            required
+          />
+          <input
+            type="email"
+            name="input"
+            placeholder="Enter your email"
+            class="intLogin"
+            required
+          />
+          <div class="wrapperPassword">
+            <input
+              type="password"
+              placeholder="Create password"
+              class="intPassword"
+              required
+            />
+            <i
+              id="togglePassword"
+              class="fa-solid fa-eye pw-hide"
+              onclick="showPassword()"
+            ></i>
+            <!-- <i id="togglePassword" class="fa-solid fa-eye-slash pw-hide" onclick="showPassword()"></i> -->
+          </div>
+          <button name="input" type="submit" id="Continue">Continue</button>
+          <p class="subtitleNoKonto">
+            Already have an account? <span class="logIN">Log in</span>
+          </p>
+          <div class="orWrapper">
+            <p class="or">or</p>
+          </div>
+        </form>
+        <form>
+          <div class="wrapperBtn">
+            <button type="submit" class="logINBtn">
+              <img
+                src="content/google.png"
+                alt=""
+                class="icon-button"
+              />Continue with Google
+            </button>
+            <button type="submit" class="logINBtn">
+              <img
+                src="content/microsoft.png"
+                alt=""
+                class="icon-button"
+              />Continue with Microsoft Account
+            </button>
+            <button type="submit" class="logINBtn">
+              <img
+                src="content/apple-logo.png"
+                alt=""
+                class="icon-button"
+              />Continue width Apple
+            </button>
+          </div>
+        </form>
+      </form>
+    </section>
+    <p class="subtitleSite SignUp">
+      <span>Terms of use</span> | <span>Privacy Policy</span>
+    </p>
+
+    <section class="SignIn">
+      <form class="main">
+        <form>
+          <h3 class="title">Welcome back</h3>
+          <input
+            type="email"
+            name="input"
+            placeholder="Enter your email"
+            class="Login"
+            required
+          />
+          <div class="wrapperPassword">
+            <input
+              type="password"
+              placeholder="Enter your password"
+              class="Password"
+              required
+            />
+            <i
+              id="togglePasswordTwo"
+              class="fa-solid fa-eye pw-hide"
+              onclick="showPasswordTwo()"
+            ></i>
+          </div>
+          <button name="input" type="submit" id="ContinueLogIn">
+            Continue
+          </button>
+          <p class="subtitleYesKonto">
+            Don't have an account? <span class="SingUpBtn">Sign up</span>
+          </p>
+          <div class="orWrapper">
+            <p class="or">or</p>
+          </div>
+        </form>
+        <form>
+          <div class="wrapperBtn">
+            <button type="submit" class="logINBtn">
+              <img
+                src="content/google.png"
+                alt=""
+                class="icon-button"
+              />Continue with Google
+            </button>
+            <button type="submit" class="logINBtn">
+              <img
+                src="content/microsoft.png"
+                alt=""
+                class="icon-button"
+              />Continue with Microsoft Account
+            </button>
+            <button type="submit" class="logINBtn">
+              <img
+                src="content/apple-logo.png"
+                alt=""
+                class="icon-button"
+              />Continue width Apple
+            </button>
+          </div>
+        </form>
+      </form>
+    </section>
+    <p class="subtitleSite SignIn">
+      <span>Terms of use</span> | <span>Privacy Policy</span>
+    </p>
+    <!-- <section class="home">
+      <div class="form-container">
+        <i class="fa-solid fa-xmark form_close"></i> 
+        <div class="form login_form">
+          <form action="#">
+            <h2>Login</h2>
+            <div class="input-box">
+              <input type="email" placeholder="Enter your email" class="intLogin" required />
+              <i class="fa-solid fa-envelope email"></i>
+            </div>
+            <div class="input-box">
+              <input
+                type="password" 
+                placeholder="Enter your password" class="intPassword"
+                required 
+              />
+              <i class="fa-solid fa-lock password"></i>
+              <i class="fa-solid fa-eye-slash pw-hide"></i>
+            </div>
+            <div class="option-field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="chek">Remember me</label>
+              </span>
+              <a href="#" class="forgot_pw">Forgot password?</a>
+            </div>
+            <button class="LoginNow" id="form-open">
+             Login Now
+            </button>
+
+            <div class="login-signup">
+              Don't have an account?<a href="#" id="signup">Signup</a>
+            </div>
+          </form>
+        </div>
+
+        signup form 
+        <div class="form signup_form">
+          <form action="#">
+            <h2>Signup</h2>
+            <div class="input-box">
+              <input
+                class="inpEmail"
+                type="email"
+                placeholder="Enter your email"
+                required
+              />
+              <i class="fa-solid fa-envelope email"></i>
+            </div>
+            <div class="input-box">
+              <input
+                class="inpPassword"
+                type="password"
+                placeholder="Create password"
+                required
+              />
+              <i class="fa-solid fa-lock password"></i>
+              <i class="fa-solid fa-eye-slash pw-hide"></i>
+            </div>
+            <div class="input-box">
+              <input
+                class="inpPasswordConf"
+                type="password"
+                placeholder="Confirm password"
+                required
+              />
+              <i class="fa-solid fa-lock password"></i>
+              <i class="fa-solid fa-eye-slash pw-hide"></i>
+            </div>
+            <button class="LoginNow confirm">Signup Now</button>
+
+            <div class="login-signup">
+              Already have an account?<a href="#" id="login">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div>
+      <section>
+        <h1>
+          <h1></h1>
+        </h1>
+      </section>
+    </div> -->
+
+    <script
+      src="https://kit.fontawesome.com/a3f432966c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/register.js"></script>
+  </body>
+</html>
